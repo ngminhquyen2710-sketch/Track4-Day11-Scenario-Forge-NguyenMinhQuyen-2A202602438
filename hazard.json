@@ -1,0 +1,48 @@
+{
+  "format": "avsim-studio/1",
+  "world": "town",
+  "params": {
+    "cutT0": 5.0,
+    "cutDur": 2.4,
+    "cutV": 15.0,
+    "cutDs": -4.0,
+    "pedT0": 9.6,
+    "pedV": 1.45,
+    "busGo": 17.5,
+    "tgT": 0.9,
+    "cutGap": 12.0,
+    "pedGap": 4.5,
+    "cutBrake": 0.0,
+    "mu": 0.8,
+    "pedLook": 0,
+    "civil": false
+  },
+  "policy": {
+    "v0": 12.5,
+    "T": 1.6,
+    "a": 1.4,
+    "b": 2.0,
+    "s0": 2.5,
+    "cautionV": 7.5,
+    "cautionRange": 55.0,
+    "pedBuffer": 2.5,
+    "cutinLat": 2.15
+  },
+  "hazards": [
+    {
+      "type": "ped",
+      "x": 230.0,
+      "side": "S",
+      "v": 1.5,
+      "t0": 0.0,
+      "trig": 55.0
+    }
+  ],
+  "space": {
+    "h0_x": [210.0, 250.0],
+    "h0_v": [1.3, 1.7],
+    "h0_trig": [45.0, 65.0]
+  },
+  "exposure": 0.04,
+  "why": "Người đi bộ sang đường tự phát ngoài vạch kẻ (jaywalking) tại phố đô thị: theo nghiên cứu an toàn giao thông đô thị và thống kê va chạm bộ hành, hành vi người đi bộ bất ngờ băng ngang đường ngoài vạch xảy ra trung bình 0.04 lần mỗi chuyến đi 5km đô thị. Người đi bộ bước từ mép đường phía Nam (z = 9.2 m) sang phía Bắc với vận tốc 1.3 - 1.7 m/s (h0_v: [1.3, 1.7]), vị trí dọc tuyến đường x = 210 - 250 m (h0_x: [210.0, 250.0]). Khoảng cách kích hoạt khi xe ego còn cách 45 - 65 m (h0_trig: [45.0, 65.0]), tương ứng khoảng 3.6 - 5.2 giây trước khi xe tới vị trí cắt. Khoảng cách này khiến người đi bộ bước vào đúng làn E1 khi xe vừa lao tới, thử thách khả năng phát hiện sớm và phanh khẩn cấp của planner."
+}
